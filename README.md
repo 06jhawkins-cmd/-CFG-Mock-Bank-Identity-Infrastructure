@@ -3,15 +3,15 @@ This is my hands-on project where I am practicing how corporate networks and clo
 
 ---
 
-# 🚀 THE MAIN EVENT: WHAT I AM BUILDING THIS WEEKEND
+#  THE MAIN EVENT: WHAT I AM BUILDING THIS WEEKEND
 My primary objective for Saturday and Sunday is to build an enterprise authentication hub focused on two high-yield industry standards:
 
-* **🎯 SETTING UP SINGLE SIGN-ON (SSO):** I will be connecting mock cloud applications straight to my Okta security hub. The goal is to make it so a bank employee only has to log in ONCE to securely unlock all of their corporate work portals without re-typing credentials.
-* **👥 CREATING GROUP ACCESS CONTROLS:** I will be organizing my users into operational teams (like Bank Tellers vs. Loan Officers) to practice the Principle of Least Privilege—ensuring users can only open the specific banking apps required for their job description.
+* ** SETTING UP SINGLE SIGN-ON (SSO):** I will be connecting mock cloud applications straight to my Okta security hub. The goal is to make it so a bank employee only has to log in ONCE to securely unlock all of their corporate work portals without re-typing credentials.
+* ** CREATING GROUP ACCESS CONTROLS:** I will be organizing my users into operational teams (like Bank Tellers vs. Loan Officers) to practice the Principle of Least Privilege—ensuring users can only open the specific banking apps required for their job description.
 
 ---
 
-## 🛠️ The Foundation (What I Completed on Friday)
+##  The Foundation (What I Completed on Friday)
 
 ### 1. Set Up My Local Server Environment
 * **Installed VirtualBox:** I set up a virtual machine on my laptop so I have a separate, isolated mini-computer to act as my local bank server.
