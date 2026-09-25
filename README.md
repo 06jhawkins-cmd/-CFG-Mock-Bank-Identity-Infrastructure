@@ -1,22 +1,24 @@
- CFG Mock Bank - Hybrid Identity & Access Management (IAM) Infrastructure
-A multi-tier security infrastructure deployment modeling enterprise directory architectures, identity lifecycles, and access governance patterns for a regional financial institution.
-
-##  Phase 1 Architecture: Environment Provisioning & Directory Design
-Completed: Friday, September 25, 2026
-
-### 1. On-Premises Core Infrastructure (Hypervisor Tier)
-* **Hypervisor Orchestration:** Configured a local virtual server instance utilizing Oracle VirtualBox, allocating virtual hardware assets to optimize host system throughput (4GB RAM, 2 CPU Cores).
-* **Minimal OS Architecture Deployment:** Successfully provisioned a headless, minimized deployment of Ubuntu Server 24.04 LTS to reduce local storage footprints to a 25GB static boundary.
-* **Network Interface Configuration:** Mapped virtual switching interfaces utilizing automated host DHCP parameters to secure localized internal IP boundaries (`10.0.2.15/24`) while preserving open network transport capabilities for upcoming schema installations.
-* **Administrative Governance:** Established foundational encrypted master root identities (`jhawkins`) and authorized secure administrative boundary loops via OpenSSH server bindings.
-
-### 2. Cloud Identity Control Plane (Application Tier)
-* **Tenant Provisioning:** Deployed a permanent Enterprise-grade Okta Developer Infrastructure Workspace mapped under authorized institutional domain footprints (`@students.towson.edu`).
-* **The "Joiner" Lifecycle Phase:** Architected the foundational user directory registry backend, executing identity onboarding workflows to enroll mock banking profiles (`Othenial Kipalu`).
-* **Lifecycle State Auditing:** Initiated policy verification sweeps to transition user entries into managed operational states, simulating password expiration constraints and administrative account lock governance.
+# CFG Mock Bank - My Identity & Access Management (IAM) Lab
+This is my hands-on project where I am practicing how corporate networks and cloud security tools manage employee access to sensitive data. 
 
 ---
 
-## Upcoming Project Milestones (Saturday & Sunday)
-* **Access Control Mapping:** Engineering attribute-based and role-based access control security groups (`SG-Branch-Operations`) to enforce the Principle of Least Privilege.
-* **Single Sign-On (SSO) Integration:** Deployed and federated a mock SaaS application integration utilizing the Okta Integration Network to handle unified authentication workflows.
+# 🚀 THE MAIN EVENT: WHAT I AM BUILDING THIS WEEKEND
+My primary objective for Saturday and Sunday is to build an enterprise authentication hub focused on two high-yield industry standards:
+
+* **🎯 SETTING UP SINGLE SIGN-ON (SSO):** I will be connecting mock cloud applications straight to my Okta security hub. The goal is to make it so a bank employee only has to log in ONCE to securely unlock all of their corporate work portals without re-typing credentials.
+* **👥 CREATING GROUP ACCESS CONTROLS:** I will be organizing my users into operational teams (like Bank Tellers vs. Loan Officers) to practice the Principle of Least Privilege—ensuring users can only open the specific banking apps required for their job description.
+
+---
+
+## 🛠️ The Foundation (What I Completed on Friday)
+
+### 1. Set Up My Local Server Environment
+* **Installed VirtualBox:** I set up a virtual machine on my laptop so I have a separate, isolated mini-computer to act as my local bank server.
+* **Installed Ubuntu Linux:** I deployed a lightweight Linux operating system onto that virtual machine to act as the bank's core basement database.
+* **Configured Network Basics:** I made sure the server can connect to the internet safely so it's ready to handle user accounts.
+
+### 2. Set Up My Cloud Security Manager
+* **Created a Free Okta Developer Account:** I set up an enterprise-grade Okta cloud security portal to manage user access profiles.
+* **Created My First Users:** I practiced the onboarding process by manually adding user accounts (like myself and a test account for Othenial) into the cloud directory.
+* **Verified Password Security Policies:** Checked my user list to ensure our corporate password rules are actively forcing safety checks on new accounts.
