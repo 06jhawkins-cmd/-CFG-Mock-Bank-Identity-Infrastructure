@@ -19,7 +19,8 @@ My primary objective for Saturday and Sunday is to build an enterprise authentic
 * **Installed Ubuntu Linux:** I deployed a lightweight Linux operating system onto that virtual machine to act as the bank's core basement database.
 * **Configured Network Basics:** I made sure the server can connect to the internet safely so it's ready to handle user accounts.
 
-• friday_1_virtualbox_setup.png
+• 
+• ![My Local VirtualBox Server Setup](friday_1_virtualbox_setup.png)
 
 
 ### 2. Set Up My Cloud Security Manager
@@ -27,7 +28,7 @@ My primary objective for Saturday and Sunday is to build an enterprise authentic
 * **Created My First Users:** I practiced the onboarding process by manually adding user accounts (like myself and a test account for Othenial) into the cloud directory.
 * **Verified Password Security Policies:** Checked my user list to ensure our corporate password rules are actively forcing safety checks on new accounts.
 
-saturday_1_rbac_groups.png
+![My Initial Okta User Registry](friday_2_okta_users.png)
 
 ##  Phase 2 Architecture: Access Control & Federated SSO
 Completed: Saturday, September 26, 2026
