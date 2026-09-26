@@ -24,10 +24,10 @@ My primary objective for Saturday and Sunday is to build an enterprise authentic
 * **Verified Password Security Policies:** Checked my user list to ensure our corporate password rules are actively forcing safety checks on new accounts.
 
 
-## 👥 Phase 2 Architecture: Access Control & Federated SSO
+##  Phase 2 Architecture: Access Control & Federated SSO
 Completed: Saturday, September 26, 2026
 
-### 🎯 1. Role-Based Access Control (RBAC) 
+###  1. Role-Based Access Control (RBAC) 
 * **What I Did:** I created a centralized security group called `SG-Branch-Operations`. This group represents a specific job "Role" at my bank (Retail Tellers). I dropped my mock users (like Keith and Othenial) into it.
 * **Why it's an Access Control:** Instead of manually assigning apps to users one by one, I attached our custom banking portal app straight to the group. The users inherited access automatically **just because of their role in the company.**
 
