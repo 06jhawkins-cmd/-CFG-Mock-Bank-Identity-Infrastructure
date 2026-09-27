@@ -39,8 +39,28 @@ Completed: Saturday, September 26, 2026
 
 ![My Okta Group Mapping](saturday_1_rbac_groups.png)
 
-### 🌐 2. Single Sign-On (SSO) & Federation Handshake
+###  2. Single Sign-On (SSO) & Federation Handshake
 * **What I Did:** I connected our customized `CFG Bank Portal` straight to my Okta cloud manager using the **SAML 2.0 federation engine**. 
 * **How I Tested It:** I logged into the user dashboard as Keith and clicked the portal tile. It automatically compiled a secure cryptographic token and shot it across the internet straight to Salesforce's authentication firewall. 
 
 ![My Single Sign-On Handshake Proof](saturday_2_sso_handshake.png)
+
+
+##  Phase 3 Architecture: Conditional Access Control & Geofencing
+Completed: Sunday, September 27, 2026
+
+###  1. Dynamic Network Perimeter Zoning
+* **What I Did:** I created an enterprise-grade geolocation dynamic zone mapping explicit high-risk international perimeters (Russian Federation, Iran, North Korea).
+
+![My Custom Dynamic Network Zones](sunday_1_networks_zone.png)
+
+###  2. Conditional Access Policy Assignment
+* **What I Did:** I architected an automated policy rule named `Block International Bank Intrusions` and dragged it to the top of the list at Priority 1 so it triggers first.
+* **Why it's an Access Control:** It tracks incoming client IP properties. If a connection attempts to hit the portal from outside our authorized parameters, the system denies access immediately before they can even type a password.
+
+![My Priority 1 Policy Rule Logic](sunday_2_policy_rule.png)
+
+###  3. Intrusion Simulation Testing (Success Proof)
+* **What I Did:** I routed a mock user session through an overseas VPN tunnel to simulate an unauthorized remote connection attempt.
+* **The Result:** The Okta policy engine actively intercepted the handshake, immediately blocked the traffic, and threw a clean `403 Access Forbidden` denial wall.
+![My Live Geofencing Firewall Success Proof](sunday_3_firewall_success.png)
