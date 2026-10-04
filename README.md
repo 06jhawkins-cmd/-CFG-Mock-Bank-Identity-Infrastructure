@@ -96,3 +96,23 @@ Completed: Saturday, October 3, 2026
 * **The Identity Automation Result:** Instead of wasting hours clicking menus 50 times, the automated PowerShell script packages the settings array into a tightly wrapped Hash Table, imports the file data, and programmatically provisions all 50 distinct corporate identities into our `Tellers` folder in under three seconds. Every account is assigned its unique login attributes, secure tracking tokens, and a mandatory first-time password change flag.
 
 ![My Active Directory Users Verification Grid](saturday_4_ad_users_verified.png)
+
+
+
+---
+
+##  Phase 5 Architecture: Locking Down the System with Group Policies (GPOs)
+**Completed:** Sunday, October 4, 2026
+
+###  1. Why we use Group Policies (GPOs)
+* **In Simple Words:** Now that we have 50 bank tellers in our system, we need to enforce safety rules. While folder structures (OUs) organize our users and Groups give them permissions, **Group Policies (GPOs)** are the master rules we set to lock down what users can and cannot do on their computers.
+
+###  2. The 2 Safety Rules I Configured
+* **The 3-Strike Lockout Rule (Brute-Force Defense):** I set a rule that says if anyone tries to guess a teller's password incorrectly **3 times in a row**, Active Directory will instantly freeze that account for **30 minutes**. This stops hackers from trying to guess passwords forever.
+* **The 10-Minute Screen Lock (The Coffee Break Rule):** I set a rule that tracks if a computer is sitting empty. If a bank teller walks away from their desk and forgets to lock their screen, the server automatically locks the monitor after **600 seconds (10 minutes)** so random people can't look at customer bank data.
+
+###  3. Forcing the System to Update
+* **What I Did:** Group policies usually take a long time to turn on by themselves, so I opened up the Command Prompt terminal and ran a quick refresh command (`gpupdate /force`) to force the server to activate my new security rules instantly.
+
+![My Group Policy Account Lockout Rules](sunday_5_lockout_configured.png)
+![My Group Policy 10-Minute Idle Timeout Rule](sunday_6_timeout_configured.png)
