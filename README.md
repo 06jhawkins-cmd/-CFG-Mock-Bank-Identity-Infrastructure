@@ -167,3 +167,31 @@ Completed: Saturday, October 3, 2026
 ![Automated User Accounts Populating Accounting OU](saturday_4_accounting_verification.png)
 ![Automated User Accounts Populating HR OU](saturday_5_hr_verification.png)
 ![Automated User Accounts Populating Managers OU](saturday_6_managers_verification.png)
+
+
+
+
+---
+
+##  Phase 8 Architecture: Role-Based Access Control (RBAC) & Folder Security Hardening
+**Current Milestone Date:** Sunday, October 11, 2026  
+**Active Weekend Objective:** Implement traditional Role-Based Access Control (RBAC) boundaries inside our corporate directory database to enforce the Principle of Least Privilege over local server storage file assets.
+
+###  1. Building Access Governance Roles (Security Groups)
+* **What I Did:** Navigated the Active Directory console tree to explicitly separate our user pool by creating two distinct **Global Security Groups** under our main staff container: `SG-Teller-Team` and `SG-Accounting-Team`.
+* **Why it Matters:** While Organizational Units (OUs) are strictly used for sorting and folder organization, Security Groups are what the Windows kernel reads to actually grant or deny user access tokens to network resources. I populated our test identity accounts into these designated roles to prepare for permission boundary testing.
+
+![Accounting Global Security Group Object Active](sunday_4_accounting_group_active.png)
+![Teller Global Security Group Object Active](sunday_5_teller_group_active.png)
+
+###  2. Configuring the Strict Least Privilege Firewall
+* **What I Did:** Built a secure local directory folder path on the server storage disk named `C:\CFG-Bank-Vault` and dropped a sensitive financial log file named `Master_Ledger.txt` inside it.
+* **The Permission Logic:** Modified the Access Control Lists (ACLs) for the folder. I explicitly configured the system rules to grant full Read/Write permissions to our `SG-Accounting-Team` role while placing a flat **Deny** restriction over the entire `SG-Teller-Team` role, satisfying enterprise compliance standards.
+
+![Enforcing Allowed Rights for the Accounting Role](sunday_6_vault_accounting_allowed.png)
+![Enforcing Full Deny Blocks for the Teller Role](sunday_7_vault_teller_denied.png)
+
+### 🧠 3. Advanced Engineering Insight: Why Local Console Sign-ins Are Blocked
+* **The Strategic Hurdle:** When attempting to log directly into the server screen console or run terminal execution shortcuts as a standard teller user object, the server's underlying security subsystem intercepted the handshake and threw a flat security block: *"The sign-in method you're trying to use isn't allowed."*
+* **The Enterprise Reason:** In a production workforce, standard domain users (like bank tellers or corporate accountants) are strictly forbidden from logging directly onto the physical screen console of a Domain Controller. This is an active Microsoft security mechanism built into the Windows NT kernel to prevent unauthorized physical system tampering or local data manipulation in the server room. 
+* **The Architecture Takeaway:** In a real corporate banking infrastructure, employees never touch the server hardware. Instead, they consume their role-based permissions from isolated client workstations out on the bank floor, proving our domain controller's security settings behave exactly like a real enterprise environment.
