@@ -225,3 +225,24 @@ Completed: Saturday, October 3, 2026
 
 ![My Automated Access Creep Staging Script Execution](friday_9_access_creep_staged.png)
 
+
+
+Phase 10 Architecture: Identity Governance, Auditing, & Access Creep Remediation
+
+Completed: Saturday, October 17, 2026
+
+1. The Strategy: What is Identity Governance and Access Creep?
+
+• In Simple Words: Over time, employees change jobs inside a bank but keep their old computer access codes. This buildup of old permissions is called Access Creep. Identity Governance is the process of auditing the system to clean up these permissions so users have only the minimum access they need to do their current job (Least Privilege).
+
+2. The Step-by-Step Remediation Fix
+
+• The Problem: We simulated five years of messy corporate transfers by putting 100 bank tellers into the high-privilege management group (SG-Branch-Managers). Because our 3,000 users have completely blank department boxes inside the database, we could not search for them using text attributes.
+• The Safety Audit: We wrote a script that opened the management group drawer, looked at every single user inside it, and scanned their physical folder paths using a wildcard string filter. If the script detected the word OU=Tellers inside their directory location, it immediately flagged them as a risk.
+(saturday_7_access_creep_detected.png)
+• The Automated Cleanup: We connected our flagged risk list to a conveyor-belt loop using the Remove-ADGroupMember command. By adding the -Confirm:$false instruction, we told the server to bypass all manual confirmation windows, allowing our script to instantly strip the high-privilege group keys from all 100 over-privileged tellers in under two seconds
+(saturday_8_remediation_start.png)
+(saturday_9_remediation_complete.png)
+• The Post-Audit Verification: We built a final safety check script to pull the active group members of SG-Branch-Managers a second time. The command confirmed that 0 tellers remained inside the high-level group, proving our network database is locked down and compliant.
+(saturday_10_governance_verified.png)
+
