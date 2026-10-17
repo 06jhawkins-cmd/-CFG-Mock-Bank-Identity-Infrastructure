@@ -239,10 +239,19 @@ Completed: Saturday, October 17, 2026
 
 • The Problem: We simulated five years of messy corporate transfers by putting 100 bank tellers into the high-privilege management group (SG-Branch-Managers). Because our 3,000 users have completely blank department boxes inside the database, we could not search for them using text attributes.
 • The Safety Audit: We wrote a script that opened the management group drawer, looked at every single user inside it, and scanned their physical folder paths using a wildcard string filter. If the script detected the word OU=Tellers inside their directory location, it immediately flagged them as a risk.
+
+
 (saturday_7_access_creep_detected.png)
+
+
 • The Automated Cleanup: We connected our flagged risk list to a conveyor-belt loop using the Remove-ADGroupMember command. By adding the -Confirm:$false instruction, we told the server to bypass all manual confirmation windows, allowing our script to instantly strip the high-privilege group keys from all 100 over-privileged tellers in under two seconds
+
+
 (saturday_8_remediation_start.png)
 (saturday_9_remediation_complete.png)
+
 • The Post-Audit Verification: We built a final safety check script to pull the active group members of SG-Branch-Managers a second time. The command confirmed that 0 tellers remained inside the high-level group, proving our network database is locked down and compliant.
+
+
 (saturday_10_governance_verified.png)
 
