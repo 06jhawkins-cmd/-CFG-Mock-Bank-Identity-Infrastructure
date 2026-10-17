@@ -195,3 +195,33 @@ Completed: Saturday, October 3, 2026
 * **The Strategic Hurdle:** When attempting to log directly into the server screen console or run terminal execution shortcuts as a standard teller user object, the server's underlying security subsystem intercepted the handshake and threw a flat security block: *"The sign-in method you're trying to use isn't allowed."*
 * **The Enterprise Reason:** In a production workforce, standard domain users (like bank tellers or corporate accountants) are strictly forbidden from logging directly onto the physical screen console of a Domain Controller. This is an active Microsoft security mechanism built into the Windows NT kernel to prevent unauthorized physical system tampering or local data manipulation in the server room. 
 * **The Architecture Takeaway:** In a real corporate banking infrastructure, employees never touch the server hardware. Instead, they consume their role-based permissions from isolated client workstations out on the bank floor, proving our domain controller's security settings behave exactly like a real enterprise environment.
+
+
+
+---
+
+# 🚀 WEEKEND MILESTONE: IDENTITY GOVERNANCE, AUDITING, & ACCESS CREEP REMEDIATION
+**Current Milestone Date:** Friday, October 16, 2026  
+**Active Weekend Objective:** Simulate a production network environment over a multi-year timeline to identify, audit, and programmatically remediate high-risk "Access Creep" vulnerability gaps across a 3,000-user database footprint.
+
+---
+
+## 🪵 Phase 9 Architecture: Programmatic Attack Surface Staging & Dependency Troubleshooting
+
+### ⚔️ 1. Simulating Active Directory Access Creep (AI Co-Pilot Assisted)
+* **What I Did:** Assumed the role of a modern IAM Engineer to stage an internal network threat test. I used an AI co-pilot workflow to generate a script designed to take 100 random user accounts out of our `Tellers` folder and programmatically inject them into an elevated administrative management group. This perfectly simulates five years of messy corporate history where employees changed roles but kept old access permissions.
+
+### 🛠️ 2. Troubleshooting Roadblock #1: The Missing Security Group
+* **The Problem:** When I ran the script, it didn't work and returned a blank screen. I investigated the system architecture and found that the AI co-pilot wrote code targeting an elevated security group name (`SG-Branch-Managers`) that **did not exist yet** in our database cabinet. 
+* **The Fix:** I took initiative, stepped into the Active Directory console, and manually built the missing `SG-Branch-Managers` global security group so the script robot finally had a valid target folder bucket to drop users into.
+
+### 📊 3. Troubleshooting Roadblock #2: The Empty Department Field
+* **The Problem:** After fixing the group, the script still didn't add anyone. I ran a terminal diagnostic query (`Get-ADUser`) to inspect a teller's properties card and found that their **Department text fields were completely empty in the database**. 
+* **Why it Happened:** When we used a script to create our 3,000 users last weekend, the code successfully put the users into the right folder paths, but we completely forgot to include the specific line telling the robot to write the actual words "Branch Operations" into their internal department profile fields. Because that field was blank, tonight's search filter couldn't find them.
+* **The Fix:** To bypass this data mismatch, I changed the script filter to a wildcard star (`*`). This told the script engine: *"Turn off the strict filters. I don't care if the department box is blank right now—just grab the first 100 actual user accounts sitting inside that Tellers folder drawer."*
+
+### 🟢 4. The Automation Victory
+* **The Result:** With the script fixed to match our real database data, the loop fired perfectly. The conveyor belt instantly processed the 100 teller accounts and injected them straight into the high-privilege management vault. This successfully gave our network a realistic "Access Creep" vulnerability, which sets the stage perfectly for us to build automated auditing and clean-up scripts tomorrow night!
+
+![My Automated Access Creep Staging Script Execution](friday_9_access_creep_staged.png)
+
