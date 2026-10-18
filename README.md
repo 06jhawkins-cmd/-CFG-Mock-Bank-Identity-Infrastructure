@@ -237,6 +237,8 @@ Completed: Saturday, October 17, 2026
 • In Simple Words: Over time, employees change jobs inside a bank but keep their old computer access codes. This buildup of old permissions is called Access Creep. Identity Governance is the process of auditing the system to clean up these permissions so users have only the minimum access they need to do their current job (Least Privilege).
 
 
+
+
 2. 
 5.
  Remediation Phase: The Step-by-Step Security Fix
