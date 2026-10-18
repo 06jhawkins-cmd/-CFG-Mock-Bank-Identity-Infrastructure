@@ -262,3 +262,33 @@ Completed: Saturday, October 3, 2026
 •  **The Post-Audit Verification:** We built a final safety check command to pull the active member list of **SG-Branch-Managers** a second time. The diagnostic command printed out a clean verification confirmation showing **0 tellers remained** inside the high-level vault, proving our network database is officially locked down, clean, and compliant!
 ![My Live Post-Remediation Verification Success Proof](saturday_10_governance_verified.png)
 
+---
+
+---
+
+# 🚀 WEEKEND MILESTONE: HELP DESK POWER LIMITS & ACCESS DELEGATION
+**Current Milestone Date:** Sunday, October 18, 2026  
+**Active Weekend Objective:** Give the help desk specific powers to manage teller passwords without making them full domain administrators.
+
+---
+
+## 🤖 Phase 11 Architecture: Locking Help Desk Techs Into One Folder
+
+### 🔍 1. Why We Limit Help Desk Powers
+* **The Problem:** Entry-level help desk workers need to reset passwords and unlock accounts every single day to keep the bank running smoothly. However, if you give them full **Domain Admin** rights, you create a major security flaw.
+* **The Risk:** If a help desk worker with full admin powers accidentally clicks a malicious phishing link, an attacker instantly wins complete control over the bank's entire network infrastructure.
+
+### 🛠️ 2. The Step-by-Step Security Fix
+* **Step 1: Creating the Custom Role Group:** We opened our active directory console, created a brand new security group named **SG-Helpdesk-Staff**, and added our test technician profile (**employee50**) straight into it.
+
+![My Automated Custom Help Desk Group Configuration](sunday_7_helpdesk_group_properties.png)
+
+* **Step 2: Giving Special Keys to One Folder:** Instead of modifying the entire domain root, we right-clicked *only* on the **OU=Tellers** folder drawer. We ran the active directory configuration wizard to give **SG-Helpdesk-Staff** exclusive permission to reset user passwords inside this single folder footprint.
+
+![My Custom Administrative Task Delegation Configuration](sunday_8_delegation_wizard_tasks.png)
+
+* **Step 3: Enforcing Strict Security Boundaries:** Because these special permissions were applied strictly to the **Tellers** folder, our help desk technicians can assist regular bank tellers perfectly but are completely blocked from viewing or changing anything inside high-level manager profile drawers.
+
+---
+
+---
