@@ -229,39 +229,36 @@ Completed: Saturday, October 3, 2026
 
 
 
-🚀 WEEKEND MILESTONE: IDENTITY GOVERNANCE & ACCESS CREEP REMEDIATION
+# 🚀 WEEKEND MILESTONE: IDENTITY GOVERNANCE & ACCESS CREEP REMEDIATION
+**Current Milestone Date:** Saturday, October 17, 2026  
+**Active Weekend Objective:** Complete Project #2 and #3 from our master roadmap by executing a live automated access review, identifying over-privileged users with blank database attributes, and programmatically stripping non-compliant permissions to enforce the Principle of Least Privilege at enterprise scale.
 
-Current Milestone Date: Saturday, October 17, 2026
-Active Weekend Objective: Complete Project #2 and #3 from our master roadmap by executing a live automated access review, identifying over-privileged users with blank database attributes, and programmatically stripping non-compliant permissions to enforce the Principle of Least Privilege at enterprise scale [INDEX].
+---
 
-🤖 Phase 10 Architecture: Automated Access Review & Remediation Loop
+## 🤖 Phase 10 Architecture: Automated Access Review & Remediation Loop
 
+### 🔍 1. Understanding Identity Governance & Access Creep
+* **In Simple Words:** Over time, employees change jobs inside a bank but keep their old computer access codes. This dangerous accumulation of old permissions is called **Access Creep**. 
+* **The Strategic Goal:** **Identity Governance** is the process of auditing the system to clean up these leftovers. This ensures all 3,000 employees operate strictly under **Least Privilege**, meaning they have only the absolute minimum access needed to do their current job role, shrinking the bank's internal attack surface.
 
-🔍 1. Understanding Identity Governance & Access Creep
-
-• In Simple Words: Over time, employees change jobs inside a bank but keep their old computer access codes. This dangerous accumulation of old permissions is called Access Creep.
-• The Strategic Goal: Identity Governance is the process of auditing the system to clean up these leftovers. This ensures all 3,000 employees operate strictly under Least Privilege, meaning they have only the absolute minimum access needed to do their current job role, shrinking the bank's internal attack surface.
 
 
 2. 
 5.
  
-2. Remediation Phase: The Step-by-Step Security Fix
-
-• The Operational Problem: We simulated five years of messy corporate transfers by putting 100 bank tellers into the high-privilege management group (SG-Branch-Managers) [INDEX]. Because our 3,000 users have completely blank department boxes inside the database core [INDEX], we could not use standard text attribute filters to separate the tellers from the real managers.
-• The Smart Safety Audit: We engineered an automated script that opened up the management group drawer, inspected every single user object inside it, and scanned their raw Distinguished Name (DN) directory paths. By using a wildcard string filter, the script tracked the physical folder paths. If it detected the text string OU=Tellers inside an account's directory location, it instantly flagged them as an active compliance risk.
+2.### 🛠️ 2. Remediation Phase: The Step-by-Step Security Fix
+* **The Operational Problem:** We simulated five years of messy corporate transfers by putting 100 bank tellers into the high-privilege management group (**SG-Branch-Managers**). Because our 3,000 users have completely blank department boxes inside the database core, we could not use standard text attribute filters to separate the tellers from the real managers.
+* **The Smart Safety Audit:** We engineered an automated script that opened up the management group drawer, inspected every single user object inside it, and scanned their raw **Distinguished Name (DN)** directory paths. By using a wildcard string filter, the script tracked the physical folder paths. If it detected the text string **OU=Tellers** inside an account's directory location, it instantly flagged them as an active compliance risk.
 ![My Automated Access Creep Vulnerability Detection Output](saturday_7_access_creep_detected.png)
 
 
-The Automated Cleanup: We connected our flagged risk list directly to an automated conveyor-belt loop using the Remove-ADGroupMember tool. By adding the -Confirm:$false safety bypass instruction, we commanded the server to suppress all manual pop-up confirmation windows. This allowed our script to instantly strip the high-privilege group keys from all 100 over-privileged tellers in under two seconds.
-
+* **The Automated Cleanup:** We connected our flagged risk list directly to an automated conveyor-belt loop using the **Remove-ADGroupMember** tool. By adding the **-Confirm:$false** safety bypass instruction, we commanded the server to suppress all manual pop-up confirmation windows. This allowed our script to instantly strip the high-privilege group keys from all 100 over-privileged tellers in under two seconds.
+  
 ![My Automated Remediation Loop Processing Initial Accounts](saturday_8_remediation_start.png)
 
 
 ![My Automated Remediation Loop Successfully Processing Remaining Accounts](saturday_9_remediation_complete.png)
 
-• The Post-Audit Verification: We built a final safety check command to pull the active member list of SG-Branch-Managers a second time. The diagnostic command printed out a clean verification confirmation showing 0 tellers remained inside the high-level vault, proving our network database is officially locked down, clean, and compliant!
-
-
+•  **The Post-Audit Verification:** We built a final safety check command to pull the active member list of **SG-Branch-Managers** a second time. The diagnostic command printed out a clean verification confirmation showing **0 tellers remained** inside the high-level vault, proving our network database is officially locked down, clean, and compliant!
 ![My Live Post-Remediation Verification Success Proof](saturday_10_governance_verified.png)
 
