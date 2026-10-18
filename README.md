@@ -235,9 +235,9 @@ Completed: Saturday, October 3, 2026
 
 ---
 
-## 🤖 Phase 10 Architecture: Automated Access Review & Remediation Loop
+##  Phase 10 Architecture: Automated Access Review & Remediation Loop
 
-### 🔍 1. Understanding Identity Governance & Access Creep
+###  1. Understanding Identity Governance & Access Creep
 * **In Simple Words:** Over time, employees change jobs inside a bank but keep their old computer access codes. This dangerous accumulation of old permissions is called **Access Creep**. 
 * **The Strategic Goal:** **Identity Governance** is the process of auditing the system to clean up these leftovers. This ensures all 3,000 employees operate strictly under **Least Privilege**, meaning they have only the absolute minimum access needed to do their current job role, shrinking the bank's internal attack surface.
 
@@ -246,7 +246,7 @@ Completed: Saturday, October 3, 2026
 2. 
 5.
  
-2.### 🛠️ 2. Remediation Phase: The Step-by-Step Security Fix
+2.###  2. Remediation Phase: The Step-by-Step Security Fix
 * **The Operational Problem:** We simulated five years of messy corporate transfers by putting 100 bank tellers into the high-privilege management group (**SG-Branch-Managers**). Because our 3,000 users have completely blank department boxes inside the database core, we could not use standard text attribute filters to separate the tellers from the real managers.
 * **The Smart Safety Audit:** We engineered an automated script that opened up the management group drawer, inspected every single user object inside it, and scanned their raw **Distinguished Name (DN)** directory paths. By using a wildcard string filter, the script tracked the physical folder paths. If it detected the text string **OU=Tellers** inside an account's directory location, it instantly flagged them as an active compliance risk.
 ![My Automated Access Creep Vulnerability Detection Output](saturday_7_access_creep_detected.png)
@@ -266,19 +266,19 @@ Completed: Saturday, October 3, 2026
 
 ---
 
-# 🚀 WEEKEND MILESTONE: HELP DESK POWER LIMITS & ACCESS DELEGATION
+#  WEEKEND MILESTONE: HELP DESK POWER LIMITS & ACCESS DELEGATION
 **Current Milestone Date:** Sunday, October 18, 2026  
 **Active Weekend Objective:** Give the help desk specific powers to manage teller passwords without making them full domain administrators.
 
 ---
 
-## 🤖 Phase 11 Architecture: Locking Help Desk Techs Into One Folder
+## Phase 11 Architecture: Locking Help Desk Techs Into One Folder
 
-### 🔍 1. Why We Limit Help Desk Powers
+###  1. Why We Limit Help Desk Powers
 * **The Problem:** Entry-level help desk workers need to reset passwords and unlock accounts every single day to keep the bank running smoothly. However, if you give them full **Domain Admin** rights, you create a major security flaw.
 * **The Risk:** If a help desk worker with full admin powers accidentally clicks a malicious phishing link, an attacker instantly wins complete control over the bank's entire network infrastructure.
 
-### 🛠️ 2. The Step-by-Step Security Fix
+###  2. The Step-by-Step Security Fix
 * **Step 1: Creating the Custom Role Group:** We opened our active directory console, created a brand new security group named **SG-Helpdesk-Staff**, and added our test technician profile (**employee50**) straight into it.
 
 ![My Automated Custom Help Desk Group Configuration](sunday_7_helpdesk_group_properties.png)
