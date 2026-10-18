@@ -227,6 +227,7 @@ Completed: Saturday, October 3, 2026
 
 
 
+
 Phase 10 Architecture: Identity Governance, Auditing, & Access Creep Remediation
 
 Completed: Saturday, October 17, 2026
@@ -234,6 +235,7 @@ Completed: Saturday, October 17, 2026
 1. The Strategy: What is Identity Governance and Access Creep?
 
 • In Simple Words: Over time, employees change jobs inside a bank but keep their old computer access codes. This buildup of old permissions is called Access Creep. Identity Governance is the process of auditing the system to clean up these permissions so users have only the minimum access they need to do their current job (Least Privilege).
+
 
 2. The Step-by-Step Remediation Fix
 
@@ -243,7 +245,7 @@ Completed: Saturday, October 17, 2026
 ![My Automated Access Creep Vulnerability Detection Output](saturday_7_access_creep_detected.png)
 
 
-• The Automated Cleanup: We connected our flagged risk list to a conveyor-belt loop using the Remove-ADGroupMember command. By adding the -Confirm:$false instruction, we told the server to bypass all manual confirmation windows, allowing our script to instantly strip the high-privilege group keys from all 100 over-privileged tellers in under two seconds
+The Automated Cleanup: We connected our flagged risk list to a conveyor-belt loop using the Remove-ADGroupMember command. By adding the -Confirm:$false instruction, we told the server to bypass all manual confirmation windows, allowing our script to instantly strip the high-privilege group keys from all 100 over-privileged tellers in under two seconds.
 
 
 ![My Automated Remediation Loop Processing Initial Accounts](saturday_8_remediation_start.png)
