@@ -292,3 +292,44 @@ Completed: Saturday, October 3, 2026
 ---
 
 ---
+---
+
+# 🚀 WEEKEND MILESTONE: AUTOMATED ONBOARDING & ENTERPRISE ACCESS SECURITY
+**Current Milestone Date:** Friday, October 23, 2026  
+**Active Weekend Objective:** Build a complete end-to-end employee onboarding pipeline by auto-creating network identities from user lists, shifting to a hands-on manual code compilation workflow, mapping access roles, and locking down folders with strict security rules.
+
+---
+
+## 🤖 Phase 12 Architecture: Full Lifecycle Account Provisioning & Role Security
+
+### 🔍 1. Why True Onboarding Matters In IAM
+* **The Manual Processing Problem:** Hand-typing employee data cards into server databases takes up too much time and easily leads to human errors.
+* **The Access Delivery Gap:** Just making a user profile card is not enough. New hires need immediate access to their specific tools on day one while staying blocked from folders they do not belong in (**Least Privilege**).
+
+### 🛠️ 2. The Step-by-Step Production Setup
+
+* **Step 1: Priming the Source Data Sheet:** We ran standard terminal commands to create a clean comma-separated database list (`C:\NewBankStaff.csv`) on our disk storage, formatting clear header columns for names, network login IDs, job titles, and bank divisions.
+
+![Creating the Source Employee Onboarding Data Sheet](friday_1_csv_creation.png)
+
+* **Step 2: Shifting to Hands-On Code Execution:** Instead of letting the AI co-pilot write the whole script automatically, I changed The workflow. The co-pilot provided a blank layout framework, and I manually analyzed the parameter hooks to fill in the missing variable connections (`$TargetOU`, `$true`, `New-ADUser`), drastically building up my script engineering skills.
+
+![Executing the Completed Ingestion Automation Loop](friday_2_onboarding_script.png)
+
+* **Step 3: Programmatic Roster Ingestion:** I fired our completed automation loop inside the script console. The program read our employee table rows, routed users through a matching department switch belt, and instantly created the live network accounts without manual input menus.
+
+![Successful Terminal Verification Logs for User Provisioning](friday_3_provisioning_success.png)
+
+* **Step 4: Automating Role Group Mapping:** I moved straight into entitlement provisioning. We opened up our directory group properties cards to verify that our new bank teller (**mvance**) was immediately nested inside **SG-Teller-Team** and our new corporate auditor (**ereyes**) was nested inside **SG-Accounting-Team**.
+
+![Verifying Automated Group Membership Allocation](friday_4_group_membership.png)
+
+* **Step 5: Enforcing Folder Access Control Lists (ACLs):** I finalized the lifecycle security loops by provisioning physical storage shares on the server disk. We targeted the `C:\Tellers Info` directory to assign explicit **Full Control** access keys exclusively to the **SG-Teller-Team** role, while configuring `C:\CFG Accounting info` to restrict absolute management rights down to the **SG-Accounting-Team** container.
+
+![Enforcing Custom NTFS Security Rights over Group Folders](friday_5_folder_acls.png)
+
+### 🛠️ 3. Analytical Troubleshooting & Display Insights
+* **The Hidden Visual Scale Limit:** During verification, the teller profile card (**mvance**) appeared completely hidden from our visual interface folders even though our terminal script printed out an absolute success confirmation status.
+* **The Resolution Discovery:** I audited the database core via direct command lookups and discovered an underlying server interface rule. The active directory management console caps its visual item list to a hard maximum of **2,000 objects** per drawer to save system memory. The new hire account was written to the directory perfectly, but sat safely past the graphic visual cutoff window due to our massive 3,000-user database scale.
+
+---
