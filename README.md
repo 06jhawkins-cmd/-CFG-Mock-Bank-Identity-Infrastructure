@@ -323,10 +323,12 @@ Completed: Saturday, October 3, 2026
 * **Step 4: Automating Role Group Mapping:** I moved straight into entitlement provisioning. We opened up our directory group properties cards to verify that our new bank teller (**mvance**) was immediately nested inside **SG-Teller-Team** and our new corporate auditor (**ereyes**) was nested inside **SG-Accounting-Team**.
 
 ![Verifying Automated Group Membership Allocation](friday_4_group_membership.png)
+[Verifying Automated Group Membership Allocation](friday_4_group_membershipcontinued.png)
 
 * **Step 5: Enforcing Folder Access Control Lists (ACLs):** I finalized the lifecycle security loops by provisioning physical storage shares on the server disk. We targeted the `C:\Tellers Info` directory to assign explicit **Full Control** access keys exclusively to the **SG-Teller-Team** role, while configuring `C:\CFG Accounting info` to restrict absolute management rights down to the **SG-Accounting-Team** container.
 
 ![Enforcing Custom NTFS Security Rights over Group Folders](friday_5_folder_acls.png)
+![Enforcing Custom NTFS Security Rights over Group Folders](friday_5_folder_aclscontiuned.png)
 
 ### 🛠️ 3. Analytical Troubleshooting & Display Insights
 * **The Hidden Visual Scale Limit:** During verification, the teller profile card (**mvance**) appeared completely hidden from our visual interface folders even though our terminal script printed out an absolute success confirmation status.
