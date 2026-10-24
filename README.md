@@ -294,19 +294,19 @@ Completed: Saturday, October 3, 2026
 ---
 ---
 
-# 🚀 WEEKEND MILESTONE: AUTOMATED ONBOARDING & ENTERPRISE ACCESS SECURITY
+# WEEKEND MILESTONE: AUTOMATED ONBOARDING & ENTERPRISE ACCESS SECURITY
 **Current Milestone Date:** Friday, October 23, 2026  
 **Active Weekend Objective:** Build a complete end-to-end employee onboarding pipeline by auto-creating network identities from user lists, shifting to a hands-on manual code compilation workflow, mapping access roles, and locking down folders with strict security rules.
 
 ---
 
-## 🤖 Phase 12 Architecture: Full Lifecycle Account Provisioning & Role Security
+##  Phase 12 Architecture: Full Lifecycle Account Provisioning & Role Security
 
-### 🔍 1. Why True Onboarding Matters In IAM
+###  1. Why True Onboarding Matters In IAM
 * **The Manual Processing Problem:** Hand-typing employee data cards into server databases takes up too much time and easily leads to human errors.
 * **The Access Delivery Gap:** Just making a user profile card is not enough. New hires need immediate access to their specific tools on day one while staying blocked from folders they do not belong in (**Least Privilege**).
 
-### 🛠️ 2. The Step-by-Step Production Setup
+###  2. The Step-by-Step Production Setup
 
 * **Step 1: Priming the Source Data Sheet:** We ran standard terminal commands to create a clean comma-separated database list (`C:\NewBankStaff.csv`) on our disk storage, formatting clear header columns for names, network login IDs, job titles, and bank divisions.
 
@@ -330,7 +330,7 @@ Completed: Saturday, October 3, 2026
 ![Enforcing Custom NTFS Security Rights over Group Folders](friday_5_folder_acls.png)
 ![Enforcing Custom NTFS Security Rights over Group Folders](friday_5_folder_aclscontiuned.png)
 
-### 🛠️ 3. Analytical Troubleshooting & Display Insights
+###  3. Analytical Troubleshooting & Display Insights
 * **The Hidden Visual Scale Limit:** During verification, the teller profile card (**mvance**) appeared completely hidden from our visual interface folders even though our terminal script printed out an absolute success confirmation status.
 * **The Resolution Discovery:** I audited the database core via direct command lookups and discovered an underlying server interface rule. The active directory management console caps its visual item list to a hard maximum of **2,000 objects** per drawer to save system memory. The new hire account was written to the directory perfectly, but sat safely past the graphic visual cutoff window due to our massive 3,000-user database scale.
 
