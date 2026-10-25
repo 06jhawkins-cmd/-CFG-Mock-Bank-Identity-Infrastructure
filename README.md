@@ -353,7 +353,7 @@ Completed: Saturday, October 3, 2026
 * **Step 3: Revoking Explicit Group Entitlements:** Directed the **Remove-ADGroupMember** engine with a **-Confirm:$false** instruction to bypass prompt blocks, instantly ripping the user out of **SG-Teller-Team** and printing clean tracking logs in my custom **DarkYellow** alert colors.
 * **Step 4: Creating the Isolation Unit & Object Migration:** Opened my server console to provision a secure, dead folder container called **OU=Disabled,OU=Bank_Staff,DC=cfgmockbank,DC=local**. I filled in my own custom automation code variables (`$Username`, `$DisabledOU`, `$User`) inside PowerShell ISE to grab the deactivated user card and slide Marcus Vance completely out of the active employee directory drawer into the isolation pool.
 
-![Successful Execution of the Enterprise Object Migration Automation](saturday_1_killswitch_execution.png)
+
 
 ![Verifying Disabled User and Group Stripping Inside ADUC Console](saturday_2_aduc_verification.png)
 
