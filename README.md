@@ -332,6 +332,33 @@ Completed: Saturday, October 3, 2026
 
 ###  3. Analytical Troubleshooting & Display Insights
 * **The Hidden Visual Scale Limit:** During verification, the teller profile card (**mvance**) appeared completely hidden from our visual interface folders even though our terminal script printed out an absolute success confirmation status.
+
+---
+
+# 🚀 WEEKEND MILESTONE: THE EMERGENCY OFFBOARDING KILL-SWITCH
+**Current Milestone Date:** Saturday, October 24, 2026  
+**Active Weekend Objective:** Complete Project #2's deprovisioning phase by designing a high-speed emergency termination script that completely locks down an employee profile, revokes explicit entitlements, and secures the bank footprint in under one second.
+
+---
+
+## 🤖 Phase 13 Architecture: Hard-Lock Account Deprovisioning & Role Strip
+
+### 🔍 1. Why Fast Offboarding is Critical for Bank Security
+* **The Offboarding Vulnerability Gap:** When an employee leaves a bank, leaving their computer login active for even one day creates a massive backdoor security vulnerability. Former employees or internal attackers can leverage these stale accounts to steal customer records.
+* **The Strategic Goal:** Build a true "Nuclear Option" kill-switch that completely halts active network connections, clears security roles, and isolates the user object into a dead folder container immediately.
+
+### 🛠️ 2. The Step-by-Step Security Fix
+* **Step 1: Overriding AI Code Clutter (Data Optimization):** The generic AI script tried to use a heavy dynamic lookup query (`Get-ADPrincipalGroupMembership`) to find permissions. I audited the infrastructure, realized the dynamic variable wouldn't align with my setup, and re-engineered the script to explicitly target my active security container (**SG-Teller-Team**).
+* **Step 2: Hard-Locking the Authentication State:** Executed the **Disable-ADAccount** command to shut down the target user profile (**mvance**) to instantly block server handshakes, immediately following up by using a random generator tool to scramble the account password.
+* **Step 3: Revoking Explicit Group Entitlements:** Directed the **Remove-ADGroupMember** engine with a **-Confirm:$false** instruction to bypass prompt blocks, instantly ripping the user out of **SG-Teller-Team** and printing clean tracking logs in my custom **DarkYellow** alert colors.
+* **Step 4: Creating the Isolation Unit & Object Migration:** Opened my server console to provision a secure, dead folder container called **OU=Disabled,OU=Bank_Staff,DC=cfgmockbank,DC=local**. I filled in my own custom automation code variables (`$Username`, `$DisabledOU`, `$User`) inside PowerShell ISE to grab the deactivated user card and slide Marcus Vance completely out of the active employee directory drawer into the isolation pool.
+
+![Successful Execution of the Enterprise Object Migration Automation](saturday_1_killswitch_execution.png)
+
+![Verifying Disabled User and Group Stripping Inside ADUC Console](saturday_2_aduc_verification.png)
+
+---
+
 * **The Resolution Discovery:** I audited the database core via direct command lookups and discovered an underlying server interface rule. The active directory management console caps its visual item list to a hard maximum of **2,000 objects** per drawer to save system memory. The new hire account was written to the directory perfectly, but sat safely past the graphic visual cutoff window due to our massive 3,000-user database scale.
 
 ---
