@@ -335,22 +335,22 @@ Completed: Saturday, October 3, 2026
 
 ---
 
-# 🚀 WEEKEND MILESTONE: THE EMERGENCY OFFBOARDING KILL-SWITCH
+#  WEEKEND MILESTONE: THE EMERGENCY OFFBOARDING KILL-SWITCH
 **Current Milestone Date:** Saturday, October 24, 2026  
 **Active Weekend Objective:** Complete Project #2's deprovisioning phase by designing a high-speed emergency termination script that completely locks down an employee profile, revokes explicit entitlements, and secures the bank footprint in under one second.
 
 ---
 
-## 🤖 Phase 13 Architecture: Hard-Lock Account Deprovisioning & Role Strip
+##  Phase 13 Architecture: Hard-Lock Account Deprovisioning & Role Strip
 
-### 🔍 1. Why Fast Offboarding is Critical for Bank Security
+###  1. Why Fast Offboarding is Critical for Bank Security
 * **The Offboarding Vulnerability Gap:** When an employee leaves a bank, leaving their computer login active for even one day creates a massive backdoor security vulnerability. Former employees or internal attackers can leverage these stale accounts to steal customer records.
 * **The Strategic Goal:** Build a true "Nuclear Option" kill-switch that completely halts active network connections, clears security roles, and isolates the user object into a dead folder container immediately.
 
-### 🛠️ 2. The Step-by-Step Security Fix
+###  2. The Step-by-Step Security Fix
 * **Step 1: Overriding AI Code Clutter (Data Optimization):** The generic AI script tried to use a heavy dynamic lookup query (`Get-ADPrincipalGroupMembership`) to find permissions. I audited the infrastructure, realized the dynamic variable wouldn't align with my setup, and re-engineered the script to explicitly target my active security container (**SG-Teller-Team**).
 * **Step 2: Hard-Locking the Authentication State:** Executed the **Disable-ADAccount** command to shut down the target user profile (**mvance**) to instantly block server handshakes, immediately following up by using a random generator tool to scramble the account password.
-* **Step 3: Revoking Explicit Group Entitlements:** Directed the **Remove-ADGroupMember** engine with a **-Confirm:$false** instruction to bypass prompt blocks, instantly ripping the user out of **SG-Teller-Team** and printing clean tracking logs in my custom **DarkYellow** alert colors.
+* **Step 3: Revoking Explicit Group Entitlements:** Directed the **Remove-ADGroupMember** engine with a **-Confirm:$false** instruction to bypass prompt blocks, instantly ripping the user out of **SG-Teller-Team** and printing clean tracking logs in my custom cyan  alert colors.
 * **Step 4: Creating the Isolation Unit & Object Migration:** Opened my server console to provision a secure, dead folder container called **OU=Disabled,OU=Bank_Staff,DC=cfgmockbank,DC=local**. I filled in my own custom automation code variables (`$Username`, `$DisabledOU`, `$User`) inside PowerShell ISE to grab the deactivated user card and slide Marcus Vance completely out of the active employee directory drawer into the isolation pool.
 
 
@@ -359,7 +359,7 @@ Completed: Saturday, October 3, 2026
 
 ---
 
-* **The Resolution Discovery:** I audited the database core via direct command lookups and discovered an underlying server interface rule. The active directory management console caps its visual item list to a hard maximum of **2,000 objects** per drawer to save system memory. The new hire account was written to the directory perfectly, but sat safely past the graphic visual cutoff window due to our massive 3,000-user database scale.
+
 
 ---
 
@@ -367,24 +367,23 @@ Completed: Saturday, October 3, 2026
 
 #  WEEKEND MILESTONE: LIFECYCLE AUDITING & COMPLIANCE LOGS
 **Current Milestone Date:** Sunday, October 25, 2026  
-**Active Weekend Objective:** Complete Project #2 by reversing our employee data pipeline, pulling active security data from the database core, and exporting a clean tracking spreadsheet to satisfy regulatory compliance rules.
+**Active Weekend Objective:** I finished Project #2 by reversing my employee data pipeline. I pulled active security data out of the server database and exported a clean tracking spreadsheet to satisfy corporate audit rules.
 
 ---
 
 ##  Phase 14 Architecture: Identity Reporting & Compliance Trails
 
-###  1. Reversing the Data Pipeline Flow
-* **The Onboarding Flow:** Re-cap of the arrival track: We started with an external text table, imported the rows, and pushed data **into** Active Directory to build network identities.
-* **The Auditing Flow:** Re-cap of the compliance track: We queried the Active Directory database directly to pull data **out** of the server, bundled the attributes inside our custom script objects, and exported the findings to an external tracking sheet.
+###  1. Flipping the Data Pipeline Flow
+* **The Onboarding Track:** To bring users in, I started with an external text table, imported the rows, and pushed that data **into** Active Directory to build live network accounts.
+* **The Auditing Track:** To track compliance, I reversed that exact flow. I asked the Active Directory database to pull data **out** of the server, organized the attributes inside my script, and exported the final list to a brand-new spreadsheet file.
 
 ###  2. The Step-by-Step Security Fix
-* **Step 1: Extracting Timestamps From the Core:** Engineered a database query that targets our newly managed profiles (**ereyes** and **mvance**) to pull down their un-editable internal **whenCreated** timestamp parameters.
-* **Step 2: Constructing Custom Audit Rows:** Formatted clean object rows (`[PSCustomObject]`) inside the script workspace to track account status, employee login names, exact folder paths, and lifecycle milestones.
-* **Step 3: Exporting the Compliance Spreadsheet:** Directed our data matrix into the **Export-Csv** engine with a `-NoTypeInformation` parameter, safely creating a permanent registry file at **C:\Onboard_Offboard_Audit.csv**.
+* **Step 1: Pulling Timestamps from the Server:** I wrote a database query targeting my test accounts (**ereyes** and **mvance**) to pull their internal, un-editable **whenCreated** timestamps. This proves exactly what second they entered the system.
+* **Step 2: Building Custom Audit Rows:** I built clean object rows (`[PSCustomObject]`) directly inside my script workspace to track employee login names, active or disabled statuses, absolute folder paths, and lifecycle milestones.
+* **Step 3: Exporting the Excel Spreadsheet:** I piped my organized data rows right into the **Export-Csv** engine with the `-NoTypeInformation` parameter. This safely created a permanent tracking spreadsheet on my hard drive at **C:\Onboard_Offboard_Audit.csv** for banking regulators.
 
 ![Successful Execution of the Compliance Reporting Audit Script](sunday_1_compliance_success.png)
 
 ![Verifying Raw Compiled CSV Audit Logs Inside Notepad](sunday_2_notepad_verification.png)
 
 ---
-
