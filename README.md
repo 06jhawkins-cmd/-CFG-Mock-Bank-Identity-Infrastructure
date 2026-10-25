@@ -362,3 +362,29 @@ Completed: Saturday, October 3, 2026
 * **The Resolution Discovery:** I audited the database core via direct command lookups and discovered an underlying server interface rule. The active directory management console caps its visual item list to a hard maximum of **2,000 objects** per drawer to save system memory. The new hire account was written to the directory perfectly, but sat safely past the graphic visual cutoff window due to our massive 3,000-user database scale.
 
 ---
+
+---
+
+#  WEEKEND MILESTONE: LIFECYCLE AUDITING & COMPLIANCE LOGS
+**Current Milestone Date:** Sunday, October 25, 2026  
+**Active Weekend Objective:** Complete Project #2 by reversing our employee data pipeline, pulling active security data from the database core, and exporting a clean tracking spreadsheet to satisfy regulatory compliance rules.
+
+---
+
+##  Phase 14 Architecture: Identity Reporting & Compliance Trails
+
+###  1. Reversing the Data Pipeline Flow
+* **The Onboarding Flow:** Re-cap of the arrival track: We started with an external text table, imported the rows, and pushed data **into** Active Directory to build network identities.
+* **The Auditing Flow:** Re-cap of the compliance track: We queried the Active Directory database directly to pull data **out** of the server, bundled the attributes inside our custom script objects, and exported the findings to an external tracking sheet.
+
+###  2. The Step-by-Step Security Fix
+* **Step 1: Extracting Timestamps From the Core:** Engineered a database query that targets our newly managed profiles (**ereyes** and **mvance**) to pull down their un-editable internal **whenCreated** timestamp parameters.
+* **Step 2: Constructing Custom Audit Rows:** Formatted clean object rows (`[PSCustomObject]`) inside the script workspace to track account status, employee login names, exact folder paths, and lifecycle milestones.
+* **Step 3: Exporting the Compliance Spreadsheet:** Directed our data matrix into the **Export-Csv** engine with a `-NoTypeInformation` parameter, safely creating a permanent registry file at **C:\Onboard_Offboard_Audit.csv**.
+
+![Successful Execution of the Compliance Reporting Audit Script](sunday_1_compliance_success.png)
+
+![Verifying Raw Compiled CSV Audit Logs Inside Notepad](sunday_2_notepad_verification.png)
+
+---
+
