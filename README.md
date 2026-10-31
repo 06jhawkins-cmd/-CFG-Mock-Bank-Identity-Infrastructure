@@ -387,3 +387,34 @@ Completed: Saturday, October 3, 2026
 ![Verifying Raw Compiled CSV Audit Logs Inside Notepad](sunday_2_notepad_verification.png)
 
 ---
+
+
+
+---
+
+# 🚀 WEEKEND MILESTONE: PRIVILEGED ACCESS MANAGEMENT (PAM) & ERROR HANDLING
+**Current Milestone Date:** Friday, October 30, 2026  
+**Active Weekend Objective:** I kicked off Project #5 by keeping my daily accounts separate from my high-level admin accounts. I built defensive **try/catch** safety nets into my code to protect my most important administrative groups.
+
+---
+
+##  Phase 15 Architecture: Account Separation & Active Error Trapping
+
+###  1. Why I Wrap Identity Automation Inside Defensive Suits
+* **The Main Problem:** In real bank networks, computer scripts can crash mid-way through a job because of typos or network drops. If a security script hits an error and keeps blindly running, it can accidentally leave high-privileged administrative doors wide open for hackers.
+* **The Try/Catch Solution:** By wrapping my scripts inside defensive **try/catch** boxes, I build a safety shield. If any line of code fails, the script instantly stops what it is doing and drops the error into a controlled safety net before the system is compromised.
+
+### 🛠️2. The Step-by-Step Security Fix
+* **Step 1: Setting Up Separate Accounts:** I opened my active directory console and created a completely separate, high-level admin account named **admin-jhawk**. I added this account straight into the **Domain Admins** group. I will use this account *only* for big infrastructure changes, keeping my daily web browsing and email separate.
+* **Step 2: Fixing the Missing Variable Design Bug:** The generic script code provided by the AI completely missed a core design step—it forgot to declare a shortcut variable container for our target group. I intercepted this error, went into the code pane, and manually created and declared the **$TargetGroup** variable at the top of my workspace to keep my code clean and modular.
+* **Step 3: Testing the Defensive Error Trap:** To test my safety net, I left a non-supported console color (**Orange**) in my script lines. The script instantly hit a wall on line 12, causing my **try/catch** loop to snap shut. It safely trapped the typo exception and kept the terminal stable.
+* **Step 4: Running the Clean Security Script:** I fixed the text color formatting to **white**. When run under my administrator profile, the script successfully cleared the security gates and printed out my final confirmation: **ALERT: High-privilege modification completed successfully.**
+
+![Trapping Syntax Exceptions Dynamically Inside the Catch Wrapper](friday_1_trap_exception.png)
+
+![Successful Execution of the Repaired Privilege Verification Script](friday_2_verification_success.png)
+
+![Verifying Employee 50 Membership Directly Inside Domain Admins Properties](friday_3_manual_verification.png)
+
+---
+
