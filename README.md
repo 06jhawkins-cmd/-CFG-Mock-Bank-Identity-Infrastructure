@@ -461,9 +461,9 @@ Completed: Saturday, October 3, 2026
 * **Step 2: Structuring Custom Tracking Objects:** I used a custom database row object structure (`[PSCustomObject]`) to compile the tracking results into explicit columns. The log tracks the target employee ID, the elevated group name, the exact start time, the exact end time, and a final compliance verification confirmation string (**CLEANLY_REVOKED**).
 * **Step 3: Exporting the Immutable Audit Sheet:** I piped my custom data object array straight into the **Export-Csv** engine with a `-NoTypeInformation` parameter switch. This instantly generated a clean spreadsheet document on my disk storage at **C:\JIT_Compliance_Audit.csv** that can be handed over to any banking regulator during an audit.
 
-![Successful Execution of the Audited JIT Lifecycle Script](sunday_1_compliance_success.png)
+![Successful Execution of the Audited JIT Lifecycle Script](sunday__compliance_success.png)
 
-![Verifying Raw Compiled CSV Audit Logs Inside Notepad](sunday_2_notepad_verification.png)
+![Verifying Raw Compiled CSV Audit Logs Inside Notepad](sunday__notepad_verification.png)
 
 ---
 
