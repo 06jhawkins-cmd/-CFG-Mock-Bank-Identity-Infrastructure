@@ -442,4 +442,29 @@ Completed: Saturday, October 3, 2026
 ![Successful Execution of the Automated Cleanup and Access Revocation](saturday_2_jit_expired.png)
 
 ---
+---
+
+#  WEEKEND MILESTONE: AUDITED JUST-IN-TIME (JIT) ACCESS TRACKING
+**Current Milestone Date:** Sunday, November 1, 2026  
+**Active Weekend Objective:** I finished Project #5 by expanding my temporary admin access script. I added an automated audit system that records exact timestamps of when high-level permissions are turned on and off, saving a clean spreadsheet for bank regulators.
+
+---
+
+##  Phase 17 Architecture: Logging Temporary Access Windows
+
+###  1. Why JIT Access Actions Must Have Paper Trails
+* **The Compliance Problem:** Giving employees high-level administrative access—even for just a short maintenance window—makes security auditors very nervous unless you can prove exactly what happened.
+* **The Audit Solution:** I combined my **Just-In-Time (JIT)** elevation loops with a live compliance log generator. This captures the precise entry and exit metrics directly from the server session and logs it automatically.
+
+###  2. The Step-by-Step Security Fix
+* **Step 1: Stamping Entry and Exit Times:** I added real-time tracking variables to my script using the **Get-Date** utility tool. The script records the exact second a user (**employee50**) enters the **Domain Admins** group, pauses for the work window, and takes another timestamp the exact second the cleanup code strips the access keys away.
+* **Step 2: Structuring Custom Tracking Objects:** I used a custom database row object structure (`[PSCustomObject]`) to compile the tracking results into explicit columns. The log tracks the target employee ID, the elevated group name, the exact start time, the exact end time, and a final compliance verification confirmation string (**CLEANLY_REVOKED**).
+* **Step 3: Exporting the Immutable Audit Sheet:** I piped my custom data object array straight into the **Export-Csv** engine with a `-NoTypeInformation` parameter switch. This instantly generated a clean spreadsheet document on my disk storage at **C:\JIT_Compliance_Audit.csv** that can be handed over to any banking regulator during an audit.
+
+![Successful Execution of the Audited JIT Lifecycle Script](sunday_1_compliance_success.png)
+
+![Verifying Raw Compiled CSV Audit Logs Inside Notepad](sunday_2_notepad_verification.png)
+
+---
+
 
