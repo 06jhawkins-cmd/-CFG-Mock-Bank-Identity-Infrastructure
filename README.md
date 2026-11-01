@@ -417,4 +417,29 @@ Completed: Saturday, October 3, 2026
 ![Verifying Employee 50 Membership Directly Inside Domain Admins Properties](friday_3_manual_verification.png)
 
 ---
+---
+
+# 🚀 WEEKEND MILESTONE: TEMPORARY AD ACCESS & QUICK CLEANUP
+**Current Milestone Date:** Saturday, October 31, 2026  
+**Active Weekend Objective:** I finished Phase 2 of Project #5. I built a script that gives an account temporary admin powers that automatically delete themselves when time runs out.
+
+---
+
+## 🤖 Phase 16 Architecture: Making Admin Powers Delete Themselves
+
+### 🔍 1. Why Admin Powers Need a Countdown Timer
+* **The Main Problem:** Giving an employee permanent admin powers is a huge security risk. If their account gets hacked weeks later while they are just checking daily emails, hackers instantly get full control of the bank.
+* **The Solution:** We use **Just-In-Time (JIT)** access. This means high-level powers are completely locked by default. They are turned on *only* when a technician needs to do a specific job, and a countdown timer strips the powers away the moment the work window closes.
+
+### 🛠️ 2. The Step-by-Step Security Fix
+* **Step 1: Building a Safety Net:** I wrapped my script inside a defensive **try/catch** box. If the script hits an unexpected error or crashes mid-way through, it instantly triggers an emergency cleanup rule to make sure the user gets stripped from the admin group anyway.
+* **Step 2: Freezing the Script Conveyor Belt:** I used the **Start-Sleep** command to act as a pause button. This stops the script from running too fast, creating a live window of time for a technician to do their work.
+* **Step 3: Adjusting the Timer for Visual Proof:** To prove my code worked, I custom-changed the pause timer from a quick 5 seconds up to **30 seconds**. This gave me enough time to move my server windows side-by-side so I could watch the database change with my own eyes.
+* **Step 4: Watching the Account Vanish Like Magic:** I ran the script and opened the **Domain Admins** group folder. For exactly 30 seconds, my test account (**employee50**) sat safely inside the admin group. The exact second the 30-second timer hit zero, the script automatically fired the cleanup command, deleted his access keys, and he vanished from the group instantly.
+
+![Monitoring Temporary High-Privilege Allocation During the Open JIT Window](saturday_1_jit_active.png)
+
+![Successful Execution of the Automated Cleanup and Access Revocation](saturday_2_jit_expired.png)
+
+---
 
